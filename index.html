@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+    <link rel="stylesheet" href="swiper.css">
+    <script src="swiper.min.js"></script>
+  </head>
+  <body>
+      <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">1<img src="https://img.alicdn.com/simba/img/TB1Wa3KIFzqK1RjSZSgSuwpAVXa.jpg" alt=""></div>
+            <div class="swiper-slide">2<img src="https://img.alicdn.com/simba/img/TB1Zt4qV4YaK1RjSZFnSuu80pXa.jpg" alt=""></div>
+            <div class="swiper-slide">3<img src="https://img.alicdn.com/tfs/TB1e_r.V3HqK1RjSZFgXXa7JXXa-520-280.jpg_q90_.webp" alt=""></div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+      </div>
+      <script>
+          var mySwiper = new Swiper('.swiper-container', {
+              autoplay: {
+           disableOnInteraction: false,
+      },
+           loop : true,
+           pagination: {//焦点
+             el: '.swiper-pagination',
+             clickable :true,
+              },
+          navigation: {//上下翻
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+          },
+  })
+      </script>
+        </body>
+</html>
